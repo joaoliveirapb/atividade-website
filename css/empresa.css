@@ -1,0 +1,154 @@
+/* Padrões e reset */
+*{
+    margin:0;
+    padding:0;
+  }
+  ul {list-style-type: none;}
+  img fieldset {border:0;}
+  h1,h2,h3,h4,h5,h6{ font-weight: normal; }
+  /* fim reset padrões */
+  
+  
+  /*
+  -- Tipografia e Cores
+  */
+  
+  body{
+      /* fonte: http://www.sitepoint.com/eight-definitive-font-stacks-2/ */
+      font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+      color:#333;
+      background: #FFF url(../imagens/fundo_site.jpg);
+  }
+  
+  p{
+      font-size: 16px; 
+      margin-bottom: 1.5em;
+      line-height: 1.4em;
+  }
+  
+  #conteudo-principal h1{
+    font-size: 36px;
+    margin-bottom: 0.5em;
+  }
+  
+  #conteudo-secundario {
+    color: #FFF;
+  }
+
+  #conteudo-secundario p{
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  #menu-principal a:hover, #menu-principal a.ativo {
+    color: #0f599f;
+  }
+  
+  #menu-principal a.ativo {
+    font-weight: bold;
+  }
+  
+  
+  /* ESTRUTURA DO SITE */
+
+  #cabecalho{
+  width: 960px; 
+  margin: 0 auto;
+  position: relative;
+  }
+  
+  #logo {
+    padding: 10px 0;
+    display: block;
+    float: left;
+  }
+  
+  #logo img {
+    display: block;
+  }
+  
+  #conteudo{
+    width: 960px;
+    margin: 30px auto;
+    height: 500px;
+  }
+  
+  #rodape{
+    width: 960px;
+    margin: 0 auto;
+  }
+  #rodape-fora{
+    background-color: gray;
+  }
+  #menu-principal{
+    position: absolute;
+    top: 26px;
+    right: 0;
+  }
+  #menu-principal li{
+    display: inline;
+  }
+  #menu-principal a{
+    /*display: block;*/
+    float:letf;
+    font-size: 18px;
+    text-decoration: none;
+    color:#333;
+    margin-left: 32px;
+  }
+  #conteudo-principal{
+    width: 600px;
+    float: left;
+  }
+  #conteudo-secundario{
+    width: 280px;
+    height: 380px;
+    float:right;
+    background-color: #737382;
+  }
+  
+  #foto-principal{
+    height: 150px;
+    margin: 0 auto;
+    background: #b6b6b6 url(../imagens/foto_principal.jpg) no-repeat center top;
+  }
+  
+  #telefone-email {
+    float: left;
+    font-size: 16px;
+    color: #FFF;
+    margin: 12px 0;
+  }
+  
+  #telefone-email span.ddd {
+    font-size: 0.8em;
+  }
+  
+  #endereco {
+    float: right;
+    text-align: right;
+    color: #FFF;
+    font-size: 14px;
+    margin: 12px 0;
+  }
+  
+  #copyright {
+    font-size: 11px;
+    color: #d9d9d9;
+    clear: both;
+    display: block;
+    padding: 1em 0;
+  }
+  
+  /*
+  -- Classes de Uso Geral
+  */
+  
+  .grupo::before, .grupo::after {
+    content: " ";
+    display: table;
+  }
+  
+  .grupo::after { 
+      clear: both;
+  }
